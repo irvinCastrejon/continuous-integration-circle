@@ -8,6 +8,8 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
+circleci-editor/main
+
 
       - run:
           name: build dependencies
@@ -58,3 +60,4 @@ workflows:
       - testlinks:
           requires:
             - build
+ main
